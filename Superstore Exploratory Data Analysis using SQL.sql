@@ -33,7 +33,7 @@ set `location id` = (
         order by `country`, `state`, `city`, `postal code`
 	) as derived
     where
-		`loc lookup`.`country` = `derived`.`country` and 
+	`loc lookup`.`country` = `derived`.`country` and 
         `loc lookup`.`state` = `derived`.`state` and 
         `loc lookup`.`city` = `derived`.`city` and 
         `loc lookup`.`postal code` = `derived`.`postal code`
